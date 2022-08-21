@@ -1,8 +1,11 @@
 <?php
 
+namespace PDFGenerators;
+
 if(!defined('PX_TO_PT')) {
     define('PX_TO_PT', 3 / 4);
 }
+
 class Autoloader
 {
     public static function register()
@@ -17,4 +20,4 @@ class Autoloader
         });
     }
 }
-Autoloader::register();
+\PDFGenerators\Autoloader::register();
