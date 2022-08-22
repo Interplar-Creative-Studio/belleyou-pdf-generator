@@ -17,8 +17,9 @@ include_once './lib/tfpdf/tfpdf.php';
 include_once './PDFGenerators/Autoloader.php';
 
 $pdfgen = new \PDFGenerators\CertificatePDFGenerator([
-    'main_image' => __DIR__ . '/files/images/background.jpg',
-    'logo' => __DIR__ . '/files/images/logo.png',
+    'scale' => 'a4', // 0.34
+    'main_image' => __DIR__ . '/files/images/background-with-logo.jpg',
+    //'logo' => __DIR__ . '/files/images/logo.png',
     'amount' => "10 000 \u{20BD}",
     'title' => 'Подарочный сертификат дает право на приобретение товаров из ассортимента интернет-магазина и розничных магазинов Belle YOU на сумму указанного номинала.',
     'subtitle' => 'Если цена товара ниже номинала сертификата, остаток средств на сертификате сохраняется и может быть использован при следующей покупке. Если сумма заказа выше номинала сертификата, то недостающая сумма подлежит доплате.'
